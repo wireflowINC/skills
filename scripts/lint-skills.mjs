@@ -186,7 +186,13 @@ for (const name of skills) {
   else {
     try {
       const cfg = JSON.parse(fs.readFileSync(cfgFile, 'utf8'));
-      if (!cfg.appSlug || !cfg.workflowId) err(cfgFile, 'needs appSlug and workflowId');
+      if (cfg.mode === 'user-workflows') {
+        // Skills that run the user's OWN workflows (list_workflows / get_workflow / run_workflow) have no app of their own.
+        if (cfg.appSlug || cfg.workflowId) err(cfgFile, 'a user-workflows skill must not name an appSlug or workflowId');
+        if (!body.includes('run_workflow')) err(skillFile, 'a user-workflows skill must name the run_workflow tool');
+      } else {
+        if (!cfg.appSlug || !cfg.workflowId) err(cfgFile, 'needs appSlug and workflowId (or "mode": "user-workflows")');
+      }
       if (cfg.appSlug && !body.includes(cfg.appSlug)) err(skillFile, `body does not name the app slug ${cfg.appSlug}`);
       if (data.metadata?.['app-slug'] && data.metadata['app-slug'] !== cfg.appSlug) err(skillFile, 'metadata app-slug differs from skill.json');
     } catch (e) { err(cfgFile, `invalid JSON: ${e.message}`); }
