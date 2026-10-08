@@ -1,6 +1,6 @@
 {
   "name": "wireflow",
-  "description": "Claude skills for AI images, video, product photos and ad creative, powered by Wireflow apps over MCP.",
+  "description": "Claude Code skills for AI image generation and AI video generation, powered by Wireflow apps over MCP.",
   "owner": {
     "name": "Wireflow",
     "url": "https://www.wireflow.ai/?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills"
@@ -9,9 +9,9 @@
     {
       "name": "wireflow-skills",
       "source": "./",
-      "description": "Claude skills for AI images, video, product photos and ad creative, powered by Wireflow apps over the Wireflow MCP connector. Plans first, asks before it spends credits.",
+      "description": "Claude Code skills for AI image generation and AI video generation, powered by Wireflow apps over the Wireflow MCP connector. Plans first, asks before it spends credits.",
       "category": "creative",
-      "tags": ["image", "video", "product-photography", "ad-creative", "wireflow", "mcp"]
+      "tags": ["claude-code-skill", "ai-image-generation", "ai-video-generation", "product-photography", "wireflow", "mcp"]
     }
   ]
 }

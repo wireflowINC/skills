@@ -1,6 +1,6 @@
 # Wireflow Skills for Claude Code
 
-Image, video and product photo skills for Claude Code and Claude. Each skill does the thinking in Claude (prompt, shot plan, scene choice, cost quote) and runs the generation as a published Wireflow app over the Wireflow MCP connector. Nothing is spent until you say yes.
+Claude Code skills for AI image generation and AI video generation, powered by Wireflow. Each skill does the thinking in Claude (prompt, shot plan, scene choice, cost quote) and runs the generation as a published Wireflow app over the Wireflow MCP connector. Nothing is spent until you say yes.
 
 | Skill | What it does | Model in its app | Credits per run | Example |
 |---|---|---|---|---|
