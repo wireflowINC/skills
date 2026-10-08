@@ -1,7 +1,7 @@
 {
   "name": "wireflow-skills",
   "displayName": "Wireflow Skills",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Claude skills for AI images, video, product photos and ad creative, powered by Wireflow apps over MCP. Each skill plans the job in Claude, shows the credit cost, waits for your yes, then runs its Wireflow app and saves the files.",
   "author": {
     "name": "Wireflow",

@@ -17,7 +17,7 @@ wooden counter, morning light, space on the right for a headline.
 
 Other things that trigger it: "generate an image of...", "text to image", "make a wallpaper", "I need a blog header", "four options for an Instagram post".
 
-## Install
+## How to install
 
 **Claude Code plugin (recommended).** Installs all Wireflow skills and the Wireflow connector together:
 
@@ -44,6 +44,12 @@ claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp
 
 In Claude.ai or Claude Desktop, add a custom connector with the same URL. Setup details: [Wireflow MCP connector docs](https://www.wireflow.ai/docs/mcp?ref=skill-ai-image-generation&utm_source=github&utm_medium=skill&utm_campaign=ai-image-generation).
 
+## Works with
+
+- **Claude Code**: where this skill is built to run. Install the plugin or use the skills CLI.
+- **Claude.ai and Claude Desktop**: add Wireflow as a custom connector. Saving files needs a shell, so there you get the image links instead.
+- **Cursor, Codex and other agents that read `SKILL.md`**: the skills CLI installs it there. Rendering needs that agent connected to the Wireflow MCP server; we have not tested those agents ourselves.
+
 ## What is free and what costs credits
 
 | Step | Cost |
@@ -60,6 +66,28 @@ Wireflow's Free plan is for building and browsing and includes a first image on 
 - Reads your credit balance (`get_credit_balance`) and the run status (`get_execution`).
 - Downloads the finished images from `cdn.wireflow.ai` into `./wireflow-outputs/`.
 - No API keys, no install scripts, nothing sent anywhere else.
+
+## FAQ
+
+### Can Claude generate images?
+
+Not on its own: Claude writes text and code. With this skill Claude writes the prompt and picks the ratio, a Wireflow app renders the image with Flux Pro Ultra, and Claude saves the file and checks it.
+
+### How much does AI image generation in Claude Code cost with this skill?
+
+19 Wireflow credits per image (price checked 8 Oct 2026). The prompt, the ratio choice and the quote are free, and nothing renders until you say yes.
+
+### Do I need a Wireflow account?
+
+Only to render. Generation runs on your own Wireflow account through the Wireflow MCP connector, which signs in with OAuth, so there is no API key to copy. Without an account you still get the prompt pack.
+
+### Which model does it use?
+
+Flux Pro Ultra v1.1, one JPEG of about 4 megapixels per run, in nine aspect ratios from 21:9 to 9:21. For another model, duplicate the app's board in Wireflow; `reference/models.md` lists the options.
+
+### Where are the images saved?
+
+In `./wireflow-outputs/<date>/` inside the folder where Claude Code is running. In Claude.ai, where there is no shell, you get the links instead.
 
 ## Files
 
