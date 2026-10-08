@@ -6,6 +6,8 @@
 
 Describe a clip and Claude plans it like a director: one subject, one action, one camera move, the light and the style, sized to fit five seconds. You see the shot list and the credit cost first. After your yes, a Wireflow app renders each shot with Hailuo 03 Max Turbo and the MP4s land in `./wireflow-outputs/`. Give it a start image and it animates that picture instead.
 
+**Format today:** one 5 second, 16:9 MP4 per shot, about 1344x768, with an audio track the model adds. Vertical or longer clips need the board edited in Wireflow (see [Limits today](#limits-today)).
+
 Not connected to Wireflow? You still get a shot list and prompts that work in any video model.
 
 ## Try it
@@ -17,7 +19,7 @@ on a rainy windowsill, slow push-in, cozy and moody.
 
 Also triggered by: "text to video", "animate this image", "make a short clip of...", "AI video generation", "I need b-roll for...".
 
-## Install
+## How to install
 
 Claude Code plugin, which adds every Wireflow skill plus the Wireflow connector:
 
@@ -44,6 +46,12 @@ claude mcp add --transport http wireflow https://www.wireflow.ai/api/mcp
 
 Claude.ai and Claude Desktop take the same URL as a custom connector.
 
+## Works with
+
+- **Claude Code**: where this skill is built to run. Install the plugin or use the skills CLI.
+- **Claude.ai and Claude Desktop**: add Wireflow as a custom connector. Saving files needs a shell, so there you get the video link instead.
+- **Cursor, Codex and other agents that read `SKILL.md`**: the skills CLI installs it there. Rendering needs that agent connected to the Wireflow MCP server; we have not tested those agents ourselves.
+
 ## Cost
 
 | What | Credits |
@@ -66,6 +74,28 @@ On Wireflow's Free plan you can build and browse, and your first image is free w
 - The skill reads your credit balance and run status from Wireflow.
 - Finished clips download from `cdn.wireflow.ai` to `./wireflow-outputs/`. If ffmpeg is installed, the skill pulls a few stills locally to check the clip.
 - No keys, no scripts to install, no other services.
+
+## FAQ
+
+### Can Claude generate video?
+
+Not by itself. With this skill Claude plans the shot and writes the prompt, a Wireflow app renders it with MiniMax Hailuo 03 Max Turbo, and Claude saves the MP4.
+
+### How long are the clips, and do they have sound?
+
+Each clip is 5 seconds, 16:9, about 1344x768, with an audio track the model generates. Vertical or longer clips need the board duplicated and edited in Wireflow.
+
+### What does a clip cost?
+
+About 40 Wireflow credits (8 per second, price checked 8 Oct 2026). Shot planning and the quote are free, and a second take only runs after your yes.
+
+### Do I need a Wireflow account?
+
+To render, yes: a Wireflow account with credits, connected through the Wireflow MCP connector (OAuth sign-in, no API key). Without it you still get the shot list and prompts.
+
+### Can it animate my own image?
+
+Yes. Give it a start image at a public `https://` URL and the clip opens on that frame. For a local file, the Wireflow connector can send you an upload link.
 
 ## Inside the folder
 
