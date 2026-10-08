@@ -137,7 +137,7 @@ for (const file of files) {
   ];
   for (const [re, label] of secretPatterns) if (re.test(text)) err(file, label);
 
-  if (RELEASE && text.includes('{{OWNER}}')) err(file, 'still contains {{OWNER}}; run scripts/set-owner.mjs <owner>');
+  if (RELEASE && text.includes(['{{', 'OWNER', '}}'].join(''))) err(file, 'still contains {{OWNER}}; run scripts/set-owner.mjs <owner>');
 }
 
 // 2. Plugin files.

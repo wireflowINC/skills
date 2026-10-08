@@ -82,7 +82,7 @@ Call `run_app` once per shot:
 
 Drop `start_image` entirely for text to video; do not send an empty string. All inputs go inside `inputs`.
 
-Poll `get_execution` with the `executionId` every 10 seconds. `PENDING`, `RUNNING` and `IN_PROGRESS` mean wait. `COMPLETED` means done; `FAILED`, `CANCELLED` and `TIMEOUT` mean stop and report the error text. A clip usually takes one to three minutes. While waiting, tell the person it is rendering instead of going silent.
+Poll `get_execution` with the `executionId` every 10 seconds. `PENDING`, `RUNNING` and `IN_PROGRESS` mean wait. `COMPLETED` means done; `FAILED`, `CANCELLED` and `TIMEOUT` mean stop and report the error text. A clip usually takes under a minute, sometimes longer. While waiting, tell the person it is rendering instead of going silent.
 
 Collect the video URL from the outputs (`url`, or each item of `urls`).
 
