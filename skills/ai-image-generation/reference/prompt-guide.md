@@ -13,7 +13,7 @@ Write full sentences in this order. Models weight the start of the prompt most.
 | Light | Where does light come from, and what is it like? | nice lighting | low morning sun from behind, warm rim light, soft fill |
 | Camera | How far, what angle, what lens feel? | photo | eye-level close-up, 85mm, shallow depth of field |
 | Style | Photo, film, illustration, render? Mood? | realistic | editorial photo, Kodak Portra film look, gentle and warm |
-| Exclusions | What must not appear? | (nothing) | no text, no logos, no watermark |
+| Exclusions | What must not appear? | (nothing) | no text, no logos, no watermark, full bleed, no border, no frame |
 
 ## Choosing the frame
 
@@ -37,7 +37,7 @@ Write full sentences in this order. Models weight the start of the prompt most.
 
 ## Worked examples
 
-These are ready to paste. The first one is the real prompt behind this skill's README image.
+These are ready to paste. The first one is the real prompt behind this skill's README image. Add the exclusions line ("no text, no logos, no watermark, full bleed, no border, no frame") to any of them before running.
 
 1. **Travel editorial, 16:9**: A red vintage bicycle leaning against a pastel blue tiled wall in a narrow Lisbon street, pink bougainvillea spilling over the top, late afternoon sun casting long diagonal shadows, warm golden light, shot on 35mm film, editorial travel photography.
 2. **Product packshot, 1:1**: E-commerce studio packshot of an amber glass candle jar with a light oak wooden lid and a plain cream paper band label with no text, centered on a seamless pure white background, soft even studio lighting, gentle contact shadow, sharp focus, high detail product photography.
@@ -58,3 +58,4 @@ These are ready to paste. The first one is the real prompt behind this skill's R
 | Garbled text | Remove text from the prompt; add it later in a design tool |
 | Hands or faces off | Use a medium shot instead of a close-up of hands; keep poses simple |
 | Too dark or flat | Name a light source and its direction |
+| Thin border, frame or dark strip at an edge | End the prompt with "full bleed, no border, no frame" and avoid words like "poster", "print" or "framed" |

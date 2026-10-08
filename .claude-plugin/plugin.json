@@ -1,7 +1,7 @@
 {
   "name": "wireflow-skills",
   "displayName": "Wireflow Skills",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AI image generation, AI video generation and product photography for Claude. Each skill plans the job, shows the credit cost, waits for your yes, then runs a published Wireflow app over the Wireflow MCP connector and saves the files.",
   "author": {
     "name": "Wireflow",

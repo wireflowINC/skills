@@ -48,7 +48,7 @@ Build each prompt in this order, as plain descriptive sentences, not a tag list:
 3. Light: time of day or light source, and its direction and quality.
 4. Camera: shot size and lens feel (close-up, wide, 35mm, overhead).
 5. Style: photo, film stock, illustration style, 3D render, and the mood.
-6. Exclusions, written as plain words: "no text, no logos, no watermark".
+6. Exclusions, written as plain words, always ending with the frame rule: "no text, no logos, no watermark, full bleed, no border, no frame". Flux can add a thin dark strip or a frame along an edge; asking for full bleed prevents most of it.
 
 Pick the ratio from where the image will live:
 
@@ -93,7 +93,7 @@ Save each image to `./wireflow-outputs/<YYYY-MM-DD>/ai-image-<n>.jpg`:
 - Windows PowerShell: `Invoke-WebRequest -Uri "<url>" -OutFile "<path>"`
 - No shell (Claude.ai): list the links instead.
 
-Open each saved file and look at it. Check the subject, the ratio and obvious faults (extra fingers, broken text, cropped heads). Describe any fault honestly. A new attempt costs another 19 credits, so ask before re-running, with the reason and the cost.
+Open each saved file and look at it. Check the subject, the ratio and obvious faults (extra fingers, broken text, cropped heads, a border or dark strip along any edge). Describe any fault honestly. A new attempt costs another 19 credits, so ask before re-running, with the reason and the cost.
 
 ## Step 6: report
 
