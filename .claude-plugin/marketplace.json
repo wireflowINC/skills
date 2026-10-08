@@ -1,0 +1,17 @@
+{
+  "name": "wireflow",
+  "description": "Wireflow skills for Claude Code: AI image generation, AI video generation and product photography, run as Wireflow apps.",
+  "owner": {
+    "name": "Wireflow",
+    "url": "https://www.wireflow.ai/?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills"
+  },
+  "plugins": [
+    {
+      "name": "wireflow-skills",
+      "source": "./",
+      "description": "AI image generation (Flux Pro Ultra), AI video generation (Hailuo 03 Max Turbo) and product photography (Nano Banana Lite) through the Wireflow MCP connector. Plans first, asks before it spends credits.",
+      "category": "creative",
+      "tags": ["image", "video", "product-photography", "wireflow", "mcp"]
+    }
+  ]
+}

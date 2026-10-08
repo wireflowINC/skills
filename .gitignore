@@ -1,0 +1,6 @@
+wireflow-outputs/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+.env

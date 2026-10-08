@@ -1,0 +1,28 @@
+{
+  "name": "wireflow-skills",
+  "displayName": "Wireflow Skills",
+  "version": "0.1.0",
+  "description": "AI image generation, AI video generation and product photography for Claude. Each skill plans the job, shows the credit cost, waits for your yes, then runs a published Wireflow app over the Wireflow MCP connector and saves the files.",
+  "author": {
+    "name": "Wireflow",
+    "url": "https://www.wireflow.ai/?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills"
+  },
+  "homepage": "https://www.wireflow.ai/docs/mcp?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills",
+  "repository": "https://github.com/{{OWNER}}/skills",
+  "license": "MIT",
+  "keywords": [
+    "ai-image-generation",
+    "ai-video-generation",
+    "product-photography",
+    "text-to-image",
+    "text-to-video",
+    "image-to-video",
+    "wireflow",
+    "mcp"
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://www.wireflow.ai/docs/mcp?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills",
+  "supportUrl": "https://www.wireflow.ai/contact?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills",
+  "privacyPolicyUrl": "https://www.wireflow.ai/privacy?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills",
+  "termsOfServiceUrl": "https://www.wireflow.ai/terms?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills"
+}
