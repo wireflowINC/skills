@@ -8,7 +8,7 @@
     "url": "https://www.wireflow.ai/?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills"
   },
   "homepage": "https://www.wireflow.ai/docs/mcp?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills",
-  "repository": "https://github.com/{{OWNER}}/skills",
+  "repository": "https://github.com/wireflowINC/skills",
   "license": "MIT",
   "keywords": [
     "ai-image-generation",

@@ -22,7 +22,7 @@ Also triggered by: "text to video", "animate this image", "make a short clip of.
 Claude Code plugin, which adds every Wireflow skill plus the Wireflow connector:
 
 ```text
-/plugin marketplace add {{OWNER}}/skills
+/plugin marketplace add wireflowINC/skills
 /plugin install wireflow-skills@wireflow
 ```
 
@@ -31,7 +31,7 @@ Finish with `/mcp` → `wireflow` → Authenticate.
 Just this skill, with the skills CLI:
 
 ```bash
-npx skills add {{OWNER}}/skills --skill ai-video-generation
+npx skills add wireflowINC/skills --skill ai-video-generation
 ```
 
 Or copy `skills/ai-video-generation` into `~/.claude/skills/`.

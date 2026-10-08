@@ -22,7 +22,7 @@ All three are real outputs from the skills' Wireflow apps, 8 October 2026.
 ### Claude Code plugin (all skills plus the Wireflow connector)
 
 ```text
-/plugin marketplace add {{OWNER}}/skills
+/plugin marketplace add wireflowINC/skills
 /plugin install wireflow-skills@wireflow
 ```
 
@@ -31,8 +31,8 @@ Then run `/mcp`, choose `wireflow` and sign in with your Wireflow account. Skill
 ### skills CLI (Claude Code, Cursor, Codex, Gemini CLI and more)
 
 ```bash
-npx skills add {{OWNER}}/skills                                 # choose skills interactively
-npx skills add {{OWNER}}/skills --skill ai-image-generation     # one skill
+npx skills add wireflowINC/skills                                 # choose skills interactively
+npx skills add wireflowINC/skills --skill ai-image-generation     # one skill
 ```
 
 ### Manual

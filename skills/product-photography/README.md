@@ -25,7 +25,7 @@ Other phrasings it answers: "AI product photography", "put my product in a scene
 1. **Plugin for Claude Code** (brings the Wireflow connector along):
 
    ```text
-   /plugin marketplace add {{OWNER}}/skills
+   /plugin marketplace add wireflowINC/skills
    /plugin install wireflow-skills@wireflow
    ```
 
@@ -34,7 +34,7 @@ Other phrasings it answers: "AI product photography", "put my product in a scene
 2. **skills CLI**, this skill only:
 
    ```bash
-   npx skills add {{OWNER}}/skills --skill product-photography
+   npx skills add wireflowINC/skills --skill product-photography
    ```
 
 3. **By hand**: copy `skills/product-photography` to `~/.claude/skills/`.

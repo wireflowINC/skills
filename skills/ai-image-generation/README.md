@@ -22,7 +22,7 @@ Other things that trigger it: "generate an image of...", "text to image", "make 
 **Claude Code plugin (recommended).** Installs all Wireflow skills and the Wireflow connector together:
 
 ```text
-/plugin marketplace add {{OWNER}}/skills
+/plugin marketplace add wireflowINC/skills
 /plugin install wireflow-skills@wireflow
 ```
 
@@ -31,7 +31,7 @@ Then run `/mcp`, pick `wireflow` and sign in.
 **skills CLI** (Claude Code, Cursor, Codex and other agents):
 
 ```bash
-npx skills add {{OWNER}}/skills --skill ai-image-generation
+npx skills add wireflowINC/skills --skill ai-image-generation
 ```
 
 **Manual.** Copy the `skills/ai-image-generation` folder into `~/.claude/skills/` (or your project's `.claude/skills/`).

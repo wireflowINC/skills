@@ -1,5 +1,5 @@
 {
-  "owner": "{{OWNER}}",
+  "owner": "wireflowINC",
   "repo": "skills",
   "note": "GitHub owner is not decided yet. Run node scripts/set-owner.mjs <owner> once to replace the owner placeholder in every file, then node scripts/lint-skills.mjs --release must pass before the first push."
 }
