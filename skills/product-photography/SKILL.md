@@ -1,6 +1,6 @@
 ---
 name: product-photography
-description: "Turn one product photo into studio and lifestyle product shots in Claude Code and Claude with Nano Banana Lite through Wireflow. Picks scenes (clean white background, lifestyle, in hand, flat lay, outdoor, colored studio backdrop, seasonal), keeps the product itself unchanged, shows the credit cost and waits for a yes, then runs a published Wireflow app and saves the photos to ./wireflow-outputs. Use when someone asks for AI product photography, product photos, packshots, e-commerce, Shopify or Amazon product images, lifestyle shots, or to put a product in a new scene or background. Without the Wireflow connector it still writes a scene prompt pack and a photo checklist. Needs a photo of a real product; for images from text alone use ai-image-generation."
+description: "AI product photography in Claude Code and Claude with Nano Banana Lite through Wireflow: turn one product photo into studio and lifestyle shots. Picks scenes (clean white background, lifestyle, in hand, flat lay, outdoor, colored studio backdrop, seasonal), keeps the product itself unchanged, shows the credit cost and waits for a yes, then runs a published Wireflow app and saves the photos to ./wireflow-outputs. Use when someone asks for AI product photography, product photos, packshots, e-commerce, Shopify or Amazon product images, lifestyle shots, or to put a product in a new scene or background. Without the Wireflow connector it still writes a scene prompt pack and a photo checklist. Needs a photo of a real product; for images from text alone use ai-image-generation."
 license: MIT
 compatibility: "Generation needs the Wireflow MCP connector (https://www.wireflow.ai/api/mcp) and a Wireflow account with credits. The product photo must be reachable at an https URL (the connector's upload link can provide one). Saving files needs a shell."
 metadata:
@@ -9,7 +9,7 @@ metadata:
   app-slug: "skill-product-photography"
 ---
 
-# Product Photography
+# AI Product Photography
 
 The person has one photo of a product. They want it shot in scenes they never set up: on white for a listing, on a kitchen counter, in a hand, from above on linen. The Wireflow app `skill-product-photography` does the rendering with Nano Banana Lite. You choose the scenes, protect the product's look, keep spending under control and file the results.
 
