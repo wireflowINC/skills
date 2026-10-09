@@ -2,12 +2,17 @@
 
 Claude Code skills for AI image generation and AI video generation, powered by Wireflow. Each skill does the thinking in Claude (prompt, shot plan, scene choice, cost quote) and runs the generation as a published Wireflow app over the Wireflow MCP connector. Nothing is spent until you say yes.
 
+<!-- catalog:start -->
+
 | Skill | What it does | Model in its app | Credits per run | Example |
 |---|---|---|---|---|
 | [ai-image-generation](skills/ai-image-generation/) | Text to image in any common aspect ratio, with a proper prompt written for you | Flux Pro Ultra | 19 | [Lisbon bicycle](skills/ai-image-generation/examples/EXAMPLES.md) |
 | [ai-video-generation](skills/ai-video-generation/) | Text or start image to a 5 second 16:9 clip, shot planned first | MiniMax Hailuo 03 Max Turbo | about 40 | [Paper boat](skills/ai-video-generation/examples/EXAMPLES.md) |
 | [product-photography](skills/product-photography/) | One product photo to white background, lifestyle, in-hand, flat lay and more | Nano Banana Lite | 16 | [Candle jar](skills/product-photography/examples/EXAMPLES.md) |
+| [amazon-product-images](skills/amazon-product-images/) | One real product photo to a listing gallery: main image draft on white, feature infographic, lifestyle, size, detail and more, 2K squares | Seedream 5 Lite | about 10 | [Serum listing](skills/amazon-product-images/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
+
+<!-- catalog:end -->
 
 Prices are Wireflow credits checked on 8 October 2026 (1 credit = US$0.01).
 
