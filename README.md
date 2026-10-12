@@ -10,6 +10,7 @@ Claude Code skills for AI image generation and AI video generation, powered by W
 | [ai-video-generation](skills/ai-video-generation/) | Text or start image to a 5 second 16:9 clip, shot planned first | MiniMax Hailuo 03 Max Turbo | about 40 | [Paper boat](skills/ai-video-generation/examples/EXAMPLES.md) |
 | [product-photography](skills/product-photography/) | One product photo to white background, lifestyle, in-hand, flat lay and more | Nano Banana Lite | 16 | [Candle jar](skills/product-photography/examples/EXAMPLES.md) |
 | [amazon-product-images](skills/amazon-product-images/) | One real product photo to a listing gallery: main image draft on white, feature infographic, lifestyle, size, detail and more, 2K squares | Seedream 5 Lite | about 10 | [Serum listing](skills/amazon-product-images/examples/EXAMPLES.md) |
+| [ugc-ad-generator](skills/ugc-ad-generator/) | Product photo, hook and an AI creator to a 6 second vertical talking UGC clip with sound | Seedream 5 Lite + Veo 3.1 Lite | about 106 (list) | [Canvas tote](skills/ugc-ad-generator/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
 
 <!-- catalog:end -->
