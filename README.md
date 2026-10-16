@@ -14,6 +14,7 @@ Claude Code skills for AI image generation and AI video generation, powered by W
 | [ai-ad-creative-generator](skills/ai-ad-creative-generator/) | Ad concepts and headlines rendered as static ad variations in 1:1, 4:5 and 9:16 at once, words spelled exactly | Nano Banana 2 | 60 (3 images) | [Mug ad](skills/ai-ad-creative-generator/examples/EXAMPLES.md) |
 | [bulk-image-generation](skills/bulk-image-generation/) | A CSV or list to a folder of images plus a manifest, one quote and one yes for the whole batch | Flux Pro Ultra | 19 per row | [Catalog batch](skills/bulk-image-generation/examples/EXAMPLES.md) |
 | [ecommerce-product-video](skills/ecommerce-product-video/) | Product photo as the first frame to a 6 second product clip: orbit, light sweep, push-in, turntable | MiniMax Hailuo 03 Max Turbo | 48 | [Serum orbit](skills/ecommerce-product-video/examples/EXAMPLES.md) |
+| [ai-workflow-runner](skills/ai-workflow-runner/) | Runs your own Wireflow workflows from a plain request, once or over a CSV, with a cost estimate first | Your workflow's models | Varies (test run: 5) | [Teapot run](skills/ai-workflow-runner/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
 
 <!-- catalog:end -->
