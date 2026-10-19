@@ -1,0 +1,10 @@
+{
+  "name": "wireflow-skills",
+  "version": "0.1.7",
+  "description": "Agent skills for AI images, video, product photos and ad creative, powered by Wireflow apps over MCP. Each skill plans the job, shows the credit cost, waits for your yes, then runs its Wireflow app and saves the files.",
+  "mcpServers": {
+    "wireflow": {
+      "httpUrl": "https://www.wireflow.ai/api/mcp"
+    }
+  }
+}
