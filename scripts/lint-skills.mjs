@@ -4,7 +4,7 @@
 //        node scripts/lint-skills.mjs --release  (before a push: no {{OWNER}} tokens left)
 // Checks: skill name rules, description length, SKILL.md length, Wireflow link tags,
 // banned Wireflow paths, secrets and pipe-to-shell installs, sibling similarity,
-// skill.json, README H1, file types and sizes, image dimensions.
+// skill.json, README H1, file types and sizes, image dimensions, audio examples (.mp3 in examples/, 1.5 MB max).
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -96,6 +96,10 @@ function slugForFile(file) {
 const files = walk(ROOT);
 const textExt = new Set(['.md', '.json', '.mjs', '.js', '.txt', '.yml', '.yaml', '']);
 const imageExt = new Set(['.png', '.jpg', '.jpeg', '.gif', '.webp']);
+// Audio examples (voiceover, music): .mp3 only, only in a skill's examples/, 1.5 MB at most. GitHub cannot play audio
+// inline, so the README links the file instead of showing it.
+const audioExt = new Set(['.mp3']);
+const MAX_AUDIO_BYTES = 1500000;
 
 // 1. Every file: allowed type, size, links, secrets, tokens.
 for (const file of files) {
@@ -107,6 +111,12 @@ for (const file of files) {
     const size = imageSize(file);
     if (size && file.includes(`${path.sep}examples${path.sep}`) && Math.max(size.w, size.h) > MAX_IMAGE_EDGE) err(file, `example image is ${size.w}x${size.h}, max edge ${MAX_IMAGE_EDGE}px`);
     if (stat.size > 5 * 1024 * 1024) err(file, 'image over 5 MiB');
+    continue;
+  }
+  if (audioExt.has(ext)) {
+    const rel = path.relative(ROOT, file).split(path.sep);
+    if (!(rel[0] === 'skills' && rel[2] === 'examples')) err(file, 'audio files belong only in a skill\'s examples/ folder');
+    if (stat.size > MAX_AUDIO_BYTES) err(file, `audio example over ${MAX_AUDIO_BYTES} bytes (${stat.size})`);
     continue;
   }
   if (!textExt.has(ext) && base !== 'LICENSE' && base !== '.gitignore') { err(file, `file type ${ext || base} is not text or a web image`); continue; }
@@ -205,7 +215,7 @@ for (const name of skills) {
     readmes[name] = r;
     const h1 = (r.match(/^# (.+)$/m) || [])[1] || '';
     if (!/ for Claude Code$/.test(h1)) err(readme, `H1 should end with "for Claude Code" (got "${h1}")`);
-    if (!/!\[[^\]]*\]\(examples\//.test(r)) err(readme, 'README must show a real example image from examples/');
+    if (!/!\[[^\]]*\]\(examples\//.test(r) && !/\]\(examples\/[^)\s]+\.mp3\)/.test(r)) err(readme, 'README must show a real example image from examples/ (an audio skill links its .mp3 example instead)');
     if ((r.replace(/```[\s\S]*?```/g, '').match(/\b\w+\b/g) || []).length < 40) err(readme, 'README under 40 words');
   }
   for (const sub of ['reference', 'examples']) {
