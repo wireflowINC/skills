@@ -16,6 +16,7 @@ Claude Code skills for AI image generation and AI video generation, powered by W
 | [ecommerce-product-video](skills/ecommerce-product-video/) | Product photo as the first frame to a 6 second product clip: orbit, light sweep, push-in, turntable | MiniMax Hailuo 03 Max Turbo | 48 | [Serum orbit](skills/ecommerce-product-video/examples/EXAMPLES.md) |
 | [ai-workflow-runner](skills/ai-workflow-runner/) | Runs your own Wireflow workflows from a plain request, once or over a CSV, with a cost estimate first | Your workflow's models | Varies (test run: 5) | [Teapot run](skills/ai-workflow-runner/examples/EXAMPLES.md) |
 | [wan-3-0-product-video](skills/wan-3-0-product-video/) | Product photo as the start frame to a 5 second Wan 3.0 clip with its own sound: crackle, fizz, steam | Wan 3.0 | 58 | [Candle push-in](skills/wan-3-0-product-video/examples/EXAMPLES.md) |
+| [heygen-video-product-video](skills/heygen-video-product-video/) | Product photo, presenter and a short script to an 8 second vertical HeyGen Video clip of a presenter holding the product, voice included | HeyGen Video | 72 | [Serum routine](skills/heygen-video-product-video/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
 
 <!-- catalog:end -->
