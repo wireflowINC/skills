@@ -18,6 +18,7 @@ Claude Code skills for AI image generation and AI video generation, powered by W
 | [wan-3-0-product-video](skills/wan-3-0-product-video/) | Product photo as the start frame to a 5 second Wan 3.0 clip with its own sound: crackle, fizz, steam | Wan 3.0 | 58 | [Candle push-in](skills/wan-3-0-product-video/examples/EXAMPLES.md) |
 | [heygen-video-product-video](skills/heygen-video-product-video/) | Product photo, presenter and a short script to an 8 second vertical HeyGen Video clip of a presenter holding the product, voice included | HeyGen Video | 72 | [Serum routine](skills/heygen-video-product-video/examples/EXAMPLES.md) |
 | [brand-consistent-images](skills/brand-consistent-images/) | Your logo, product photo and palette to on-brand square images that keep the logo and product as given | Nano Banana Lite | 16 | [Candle brand](skills/brand-consistent-images/examples/EXAMPLES.md) |
+| [ai-thumbnail-maker](skills/ai-thumbnail-maker/) | Three 16:9 YouTube thumbnail concepts from a video title, headline spelled exactly | Ideogram 4.5 | 57 (3 images) | [Cold plunge thumbnails](skills/ai-thumbnail-maker/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
 
 <!-- catalog:end -->
