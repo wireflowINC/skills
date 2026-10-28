@@ -21,6 +21,7 @@ Claude Code skills for AI image generation and AI video generation, powered by W
 | [ai-thumbnail-maker](skills/ai-thumbnail-maker/) | Three 16:9 YouTube thumbnail concepts from a video title, headline spelled exactly | Ideogram 4.5 | 57 (3 images) | [Cold plunge thumbnails](skills/ai-thumbnail-maker/examples/EXAMPLES.md) |
 | [ai-fashion-model-photos-for-ecommerce](skills/ai-fashion-model-photos-for-ecommerce/) | A flat-lay garment on an AI model: front, 3/4 and lifestyle catalog shots, garment unchanged | Nano Banana Lite | 48 (3 images) | [Sage shirt dress on a model](skills/ai-fashion-model-photos-for-ecommerce/examples/EXAMPLES.md) |
 | [ai-instagram-carousel-generator](skills/ai-instagram-carousel-generator/) | A 6-slide Instagram or LinkedIn carousel from a topic or blog post, one brand style, your words on every slide | Seedream 5 Lite | 60 (6 images) | [Content plan carousel](skills/ai-instagram-carousel-generator/examples/EXAMPLES.md) |
+| [ai-infographic-generator](skills/ai-infographic-generator/) | Two portrait infographic layouts (process, comparison, list, data) from a brief, article or stats, text spelled exactly | Ideogram 4.5 | 38 (2 images) | [Blog repurposing infographic](skills/ai-infographic-generator/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
 
 <!-- catalog:end -->
