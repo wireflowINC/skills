@@ -1,7 +1,7 @@
 {
   "name": "wireflow-skills",
   "displayName": "Wireflow Skills",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "description": "Claude Code skills for AI image generation and AI video generation, powered by Wireflow apps over MCP. Each skill plans the job in Claude, shows the credit cost, waits for your yes, then runs its Wireflow app and saves the files.",
   "author": {
     "name": "Wireflow",
@@ -49,7 +49,9 @@
     "ai-instagram-carousel-generator",
     "instagram-carousel",
     "ai-infographic-generator",
-    "infographic"
+    "infographic",
+    "ai-storyboard-generator",
+    "storyboard"
   ],
   "icon": "./assets/icon.png",
   "documentationUrl": "https://www.wireflow.ai/docs/mcp?ref=skill-wireflow-skills&utm_source=github&utm_medium=skill&utm_campaign=wireflow-skills",
