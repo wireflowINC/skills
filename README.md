@@ -24,6 +24,7 @@ Claude Code skills for AI image generation and AI video generation, powered by W
 | [ai-infographic-generator](skills/ai-infographic-generator/) | Two portrait infographic layouts (process, comparison, list, data) from a brief, article or stats, text spelled exactly | Ideogram 4.5 | 38 (2 images) | [Blog repurposing infographic](skills/ai-infographic-generator/examples/EXAMPLES.md) |
 | [ai-storyboard-generator](skills/ai-storyboard-generator/) | A 6-panel storyboard for a video ad or client pitch from a script or brief, the same character and look in every frame | Seedream 5 Lite | 60 (6 images) | [Bike repair ad storyboard](skills/ai-storyboard-generator/examples/EXAMPLES.md) |
 | [ai-voiceover-for-ugc-ads](skills/ai-voiceover-for-ugc-ads/) | Rewrites an ad script for speaking and returns 3 MP3 voice takes to A/B under your footage | Minimax Speech 02 HD | 51 | [3 voice takes](skills/ai-voiceover-for-ugc-ads/examples/EXAMPLES.md) |
+| [ai-background-music](skills/ai-background-music/) | Turns a mood and genre brief into 2 instrumental music tracks to put under your ad or product video | Lyria 3 Pro | 43 | [2 music tracks](skills/ai-background-music/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
 
 <!-- catalog:end -->
