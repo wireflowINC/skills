@@ -27,6 +27,7 @@ Claude Code skills for AI image generation and AI video generation, powered by W
 | [ai-background-music](skills/ai-background-music/) | Turns a mood and genre brief into 2 instrumental music tracks to put under your ad or product video | Lyria 3 Pro | 43 | [2 music tracks](skills/ai-background-music/examples/EXAMPLES.md) |
 | [ai-blog-featured-images](skills/ai-blog-featured-images/) | A 16:9 featured hero image and a matching social share card with the title for a blog post, from its title and summary in the blog's style | Seedream 5 Lite | 23 (2 images) | [Remote team blog post pair](skills/ai-blog-featured-images/examples/EXAMPLES.md) |
 | [ai-sound-effects-for-video-ads](skills/ai-sound-effects-for-video-ads/) | Turns a scene description into 4 matching sound effects (whoosh, pop, click, ambience) for a video ad or product clip | ElevenLabs Sound Effects | 19 | [4 sound effects](skills/ai-sound-effects-for-video-ads/examples/EXAMPLES.md) |
+| [ai-mood-board-generator](skills/ai-mood-board-generator/) | A visual direction for a client pitch or campaign from a brief: four style-consistent reference images plus a palette and tone note | Seedream 5 Lite | 43 (4 images and a note) | [Harbour coffee roaster board](skills/ai-mood-board-generator/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
 
 <!-- catalog:end -->
