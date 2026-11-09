@@ -29,6 +29,7 @@ Claude Code skills for AI image generation and AI video generation, powered by W
 | [ai-sound-effects-for-video-ads](skills/ai-sound-effects-for-video-ads/) | Turns a scene description into 4 matching sound effects (whoosh, pop, click, ambience) for a video ad or product clip | ElevenLabs Sound Effects | 19 | [4 sound effects](skills/ai-sound-effects-for-video-ads/examples/EXAMPLES.md) |
 | [ai-mood-board-generator](skills/ai-mood-board-generator/) | A visual direction for a client pitch or campaign from a brief: four style-consistent reference images plus a palette and tone note | Seedream 5 Lite | 43 (4 images and a note) | [Harbour coffee roaster board](skills/ai-mood-board-generator/examples/EXAMPLES.md) |
 | [ai-social-media-graphics](skills/ai-social-media-graphics/) | One branded quote, stat or announcement post in square, portrait and story sizes, with every word approved first | Ideogram 4.5 | 57 (3 images) | [Studio opening post](skills/ai-social-media-graphics/examples/EXAMPLES.md) |
+| [ai-poster-generator](skills/ai-poster-generator/) | A print-style event or promo poster with headline, date, venue and call to action spelled exactly, in two portrait layouts for client approval | Ideogram 4.5 | 38 (2 posters) | [Rooftop jazz night posters](skills/ai-poster-generator/examples/EXAMPLES.md) |
 | [Wireflow builder skill](https://github.com/wireflowINC/wireflow-skill) (advanced, API) | Build and run your own Wireflow workflows from Claude with an API key | Any | Varies | Separate repo |
 
 <!-- catalog:end -->
